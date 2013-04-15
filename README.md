@@ -1,12 +1,14 @@
 cocos2d-x-jsonconverter
-=======================
+=====================
 
-intro
------------------------
-a simple JSON parser for cocos2d-x, based on cJSON.
+Intro
+---------------------
+This is a simple JSON parser for cocos2d-x, based on cJSON.
+
+It converts JSON objects to CCDictionary objects, and vice versa.
 
 
-parse rules
+Datatype Mapping
 ---------------------
 
 object : CCDictionary
