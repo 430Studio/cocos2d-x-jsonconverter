@@ -1,12 +1,22 @@
 cocos2d-x-jsonconverter
 =======================
 
-JSON wrapper for cocos2d-x, based on cJSON.
+intro
+-----------------------
+a simple JSON parser for cocos2d-x, based on cJSON.
 
-Data type mapping
+
+parse rules
+---------------------
+
 object : CCDictionary
+
 array : CCArray
+
 string : CCString
+
 number : CCNumber
+
 true/false : CCBool
+
 null : CCNull
