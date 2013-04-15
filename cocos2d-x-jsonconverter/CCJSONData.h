@@ -41,23 +41,23 @@ public:
     void setValue(double v)  { m_nValue=v; m_dValue=v;}
 };
 
-class CCBool : public CCObject {
-private:
-    bool m_bValue;
-public:
-    CCBool(bool v)
-    :m_bValue(v){}
-    
-    static CCBool * create(bool v)
-    {
-        CCBool * pRet = new CCBool(v);
-        pRet->autorelease();
-        return pRet;
-    }
-    
-    bool getValue() const { return m_bValue; }
-    void setValue(bool v) { m_bValue = v; }
-};
+//class CCBool : public CCObject {
+//private:
+//    bool m_bValue;
+//public:
+//    CCBool(bool v)
+//    :m_bValue(v){}
+//    
+//    static CCBool * create(bool v)
+//    {
+//        CCBool * pRet = new CCBool(v);
+//        pRet->autorelease();
+//        return pRet;
+//    }
+//    
+//    bool getValue() const { return m_bValue; }
+//    void setValue(bool v) { m_bValue = v; }
+//};
 
 class CCNull : public CCObject {
 public:
