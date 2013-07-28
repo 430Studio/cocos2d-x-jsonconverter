@@ -36,6 +36,7 @@ CCDictionary * CCJSONConverter::dictionaryFrom(const char *str)
     CCAssert(json && json->type==cJSON_Object, "CCJSONConverter:wrong json format");
     CCDictionary * dictionary = CCDictionary::create();
     convertJsonToDictionary(json, dictionary);
+    cJSON_Delete(json);
     return dictionary;
 }
 
